@@ -1,0 +1,1 @@
+<h1>Student List</h1><a href="/create/">Add Student</a><hr>{% for s in students %}<p>{{s.name}} - {{s.email}} | <a href="/{{s.id}}/edit/">Edit</a> <a href="/{{s.id}}/delete/">Delete</a></p>{% empty %}<p>No students</p>{% endfor %}
